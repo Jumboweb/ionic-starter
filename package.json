@@ -1,7 +1,7 @@
 {
   "name": "ionic-starter",
   "version": "0.0.1",
-  "description": "Start a new ionic project in seconds !",
+  "description": "Ionic starter Jumboweb",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",

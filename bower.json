@@ -2,9 +2,9 @@
   "name": "ionic-starter",
   "private": "true",
   "version": "0.0.1",
-  "homepage": "https://github.com/loicknuchel/ionic-starter",
-  "authors": [ "Loïc Knuchel <loicknuchel@gmail.com>" ],
-  "description": "Start a new ionic project in seconds !",
+  "homepage": "http://www.jumboweb.fr",
+  "authors": [ "Pierre-Julien D'alberto <dalberto.pj@gmail.com>" ],
+  "description": "Ionic starter Jumboweb",
   "main": "www/index.html",
   "keywords": [
     "html5",

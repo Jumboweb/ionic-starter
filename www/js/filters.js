@@ -55,14 +55,4 @@ angular.module('app')
     var mul = Math.pow(10, round ? round : 0);
     return $filter('number')(Math.round(number*mul)/mul);
   };
-})
-
-.filter('rating', function($filter){
-  'use strict';
-  return function(rating, max, withText){
-    var stars = rating ? new Array(Math.floor(rating)+1).join('★') : '';
-    var maxStars = max ? new Array(Math.floor(max)-Math.floor(rating)+1).join('☆') : '';
-    var text = withText ? ' ('+$filter('mynumber')(rating, 1)+' / '+$filter('mynumber')(max, 1)+')' : '';
-    return stars+maxStars+text;
-  };
 });

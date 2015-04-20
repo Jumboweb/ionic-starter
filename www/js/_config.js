@@ -8,16 +8,7 @@ var Config = (function(){
     storage: true, // should save data to browser storage
     storagePrefix: 'app-', // prefix all stoarge entries with this prefix
     emailSupport: 'exemple@mail.com',
-    backendUrl: 'http://myserver.com/api/v1',
-    parse: {
-      applicationId: '',
-      restApiKey: ''
-    },
-    gcm: {
-      // create project here : https://console.developers.google.com/
-      senderID: '263462318850', // Google project number
-      apiServerKey: 'AIzaSyDzM4XzyW9HWJNol9OePz4cAXi7QbVANOs' // used only to send notifications
-    }
+    backendUrl: 'http://myserver.com/api/v1'
   };
   return cfg;
 })();
