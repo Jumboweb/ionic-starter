@@ -1,4 +1,11 @@
+// @if NODE_ENV == 'BROWSER-DEVELOPMENT'
+angular.module('app', ['ionic', 'ngCordovaMocks', 'LocalForageModule'])
+// @endif
+
+// @if NODE_ENV == 'DEVICE-DEVELOPMENT'
 angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule'])
+// @endif
+
 .config(function($stateProvider, $urlRouterProvider, $provide, $httpProvider, AuthSrvProvider) {
   'use strict';
   $stateProvider

@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var preprocess = require('gulp-preprocess');
 
 var paths = {
   sass: ['./scss/**/*.scss']
@@ -47,4 +48,24 @@ gulp.task('git-check', function(done) {
     process.exit(1);
   }
   done();
+});
+
+gulp.task('browser-development', function() {
+  gulp.src('./www/gulp_preprocess_me/*.js')
+    .pipe(preprocess({context: { NODE_ENV: 'BROWSER-DEVELOPMENT'}}))
+    .pipe(gulp.dest('./www/js/'));
+
+  gulp.src('./www/gulp_preprocess_me/index.html')
+    .pipe(preprocess({context: { NODE_ENV: 'BROWSER-DEVELOPMENT'}}))
+    .pipe(gulp.dest('./www/'));
+});
+
+gulp.task('device-development', function() {
+  gulp.src('./www/gulp_preprocess_me/*.js')
+    .pipe(preprocess({context: { NODE_ENV: 'DEVICE-DEVELOPMENT'}}))
+    .pipe(gulp.dest('./www/js/'));
+
+  gulp.src('./www/gulp_preprocess_me/index.html')
+    .pipe(preprocess({context: { NODE_ENV: 'DEVICE-DEVELOPMENT'}}))
+    .pipe(gulp.dest('./www/'));
 });

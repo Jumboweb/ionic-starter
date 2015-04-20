@@ -13,7 +13,14 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <!-- @if NODE_ENV='DEVICE-DEVELOPMENT' -->
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='BROWSER-DEVELOPMENT' -->
+    <script src="lib/ngCordova/dist/ng-cordova-mocks.js"></script>
+    <!-- @endif -->
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
