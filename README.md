@@ -3,7 +3,7 @@
 ## Getting started
 
 - install nodejs, gulp, cordova & ionic (if not already done)
-- `git clone git@github.com:loicknuchel/ionic-starter.git` : clone this repo
+- `git clone git@github.com:Jumboweb/ionic-starter.git` : clone this repo
 - `cd ionic-starter` : go to folder
 - `bower install` : install app dependencies
 - `npm install gulp` : install build dependencies
