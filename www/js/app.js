@@ -13,16 +13,6 @@ angular.module('app', ['ionic', 'ngCordova', 'LocalForageModule'])
     templateUrl: 'views/menu.html',
     controller: 'AppCtrl'
   })
-  .state('app.tabs', {
-    url: '/tabs',
-    abstract: true,
-    views: {
-      'menuContent': {
-        templateUrl: 'views/tabs.html',
-        controller: 'TabsCtrl'
-      }
-    }
-  })
   .state('app.tabs.home', {
     url: '/home',
     views: {

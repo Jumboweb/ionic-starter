@@ -1,7 +1,7 @@
 {
-  "name": "ionic-starter",
+  "name": "la-rescousse",
   "version": "0.0.1",
-  "description": "Ionic starter Jumboweb",
+  "description": "La rescousse",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",

@@ -1,10 +1,10 @@
 {
-  "name": "ionic-starter",
+  "name": "la-rescousse",
   "private": "true",
   "version": "0.0.1",
-  "homepage": "http://www.jumboweb.fr",
-  "authors": [ "Pierre-Julien D'alberto <dalberto.pj@gmail.com>" ],
-  "description": "Ionic starter Jumboweb",
+  "homepage": "http://www.la-rescousse.com/",
+  "authors": [ "Pierre-Julien D'alberto <contact@jumboweb.fr>" ],
+  "description": "Application mobile la rescousse ",
   "main": "www/index.html",
   "keywords": [
     "html5",

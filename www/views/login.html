@@ -1,23 +1,29 @@
 <ion-view>
-  <ion-header-bar class="bar-positive">
-    <div class="title">Login</div>
-  </ion-header-bar>
-  <ion-content>
+  <ion-content class="bg-connexion" >
+    <img ng-src="img/logo.png" class="center">
     <form ng-submit="fn.login(data.credentials)">
-      <div class="list">
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Login</span>
-          <input type="text" placeholder="ex: Admin" ng-model="data.credentials.login">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Email" ng-model="data.credentials.login">
         </label>
-        <label class="item item-input item-stacked-label">
-          <span class="input-label">Password</span>
-          <input type="password" placeholder="ex: admin" ng-model="data.credentials.password">
+      </div>
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="password" placeholder="Mot de passe" ng-model="data.credentials.password">
         </label>
       </div>
       <div class="padding">
-        <button type="submit" class="button button-block button-positive" ng-disabled="!data.credentials.login || !data.credentials.password || data.loading === true">Login</button>
-        <div class="card padding" ng-if="data.error !== null">Error: {{data.error}}</div>
+        <button type="submit" class="button button-block button-energized roboto-condensed-bold" ng-disabled="!data.credentials.login || !data.credentials.password || data.loading === true">CONNEXION</button>
+        <div class="card padding" ng-if="data.error !== null">Erreur : {{data.error}}</div>
       </div>
     </form>
+
   </ion-content>
+  <div class="bar bar-footer bar-calm">
+    <div class="title">
+      <a href="#" class="roboto-condensed-bold">
+        PAS ENCORE INSCRIT ?
+      </a>
+    </div>
+  </div>
 </ion-view>
